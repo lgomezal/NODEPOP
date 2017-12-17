@@ -1,0 +1,38 @@
+{                          
+    "anuncios": [ {
+            "nombre": "Bicicleta",
+            "venta": true,
+            "precio": 230.15,
+            "foto": "images/anuncios/bici.jpg",      
+            "tags": [ "lifestyle", "motor"]
+        },
+        {
+            "nombre": "iPhone 3GS",
+            "venta": false,
+            "precio": 50.00,
+            "foto": "images/anuncios/iphone.png",     
+            "tags": [ "lifestyle", "mobile"]
+        },
+        {
+            "nombre": "Taladro",
+            "venta": true,
+            "precio": 110.00,
+            "foto": "images/anuncios/taladro.png",     
+            "tags": [ "work"]
+        },
+        {
+            "nombre": "Vespa",
+            "venta": false,
+            "precio": 3500.00,
+            "foto": "images/anuncios/vespa.png",     
+            "tags": [ "motor"]
+        },
+        {
+            "nombre": "iPad 4",
+            "venta": true,
+            "precio": 275.00,
+            "foto": "images/anuncios/ipad.jpg",     
+            "tags": [ "mobile","lifestyle"]
+        }
+    ]
+}
