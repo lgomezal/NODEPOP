@@ -1,3 +1,37 @@
+# PRÁCTICA DEVOPS
+
+Despliegue en servidor AWS de aplicación NODEPOP con NGINX, PM2 y MONGODB.
+
+Web estática (plantilla de startbootstrap.com)         
+
+```
+http://35.169.158.143
+```
+
+Aplicación NODEPOP:
+
+```
+http://ec2-35-169-158-143.compute-1.amazonaws.com
+```
+
+En el apartado 'Documentación de uso' encontrará las posibles peticiones que se pueden realizar, se pueden probar con Postman:
+
+```
+http://ec2-35-169-158-143.compute-1.amazonaws.com + url de petición, ejemplo:
+
+http://ec2-35-169-158-143.compute-1.amazonaws.com/apiv1/usuarios/registro
+```
+
+Ruta de archivos estáticos:
+
+```
+http://ec2-35-169-158-143.compute-1.amazonaws.com/images/anuncios/bici.jpg
+```
+
+
+
+
+
 # NODEPOP
 
 Aplicación que devuelve una lista de anuncios para ser mostrados desde un cliente iOS o Android. La consulta es con autenticación de usuario con JWT. También existe la posibilidad de registro de usuarios.
@@ -11,7 +45,7 @@ La aplicación está desarrollada sobre la versión de Node v8.9.1 y sobre la ve
 Una vez clonado el repositorio nos colocarnos en el raiz del proyecto y ejecutamos ejecutar  ``` npm install ```
 
 
-Se puede ejecutar un script de inicialización de la bbdd. Para ello ejecutar el siguiente comando: 
+Se puede ejecutar un script de inicialización de la bbdd. Se debe tener abierto en el puerto 27017 mongodb. Para ejecutar el script utilizar el siguiente comando: 
 
 ```
 npm run installDB
@@ -25,6 +59,11 @@ o
 nodemon
 ```
 
+La API se puede arrancar en modo cluster con el comando: 
+
+```
+node ./bin/cluster
+```
 
 
 ***
